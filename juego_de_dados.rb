@@ -23,13 +23,6 @@ resultado_jugadoris = [ dado_11 , dado_22, total2]
 
 puts "=> Hola Yo nel mi primer dado tengo #{resultado_jugadoris[0]} en el segundo tengo #{resultado_jugadoris[1]} y el total es #{resultado_jugadoris[2]}!"
 
-
-=begin
-# los computadora lanza su proprio dado
-b = rand(6) + 1
-puts "=> la computafora hizo #{b}!"
-=end
-
 if resultado_jugador[2] > resultado_jugadoris[2]
 
   puts "=> Hei #{nombre} ganaste! Tuviste suerte!"
