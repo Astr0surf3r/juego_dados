@@ -1,7 +1,18 @@
+
+
 puts "=> Bienvenido en los juegos de los dado"
 puts "=> Hola, como te llamas?"
 nombre = gets.chomp
 puts "=> Hola " + nombre + " vamos a jugari con dos dados?"
+puts "=> Con cuantos dados quiere jugar 1 o 2"
+dados = gets.chomp
+
+if dados == '1'
+
+puts "tenemos que agregar el program por un dado"
+#programa con un dado
+
+elsif dados == '2' 
 
 dado_1 = rand(6) + 1
 dado_2 = rand(6) + 1
@@ -38,3 +49,17 @@ else
   puts "=> Empate! Amigos como antes!"
 
 end
+
+
+else
+
+puts "tiene que elegir con cuanto dados quiere jugar"
+
+
+end
+
+
+
+
+
+
