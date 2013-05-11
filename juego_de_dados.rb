@@ -1,4 +1,16 @@
+def dados_aleatorio(n)
 
+    dado = []
+
+    n.times do
+
+      dado << rand(6) + 1
+    
+    end
+
+    dado
+
+end
 
 puts "=> Bienvenido en los juegos de los dado"
 puts "=> Hola, como te llamas?"
@@ -13,16 +25,18 @@ puts "tenemos que agregar el program por un dado"
 #programa con un dado
 
 elsif dados == '2' 
-
+=begin
 dado_1 = rand(6) + 1
 dado_2 = rand(6) + 1
 total = dado_1 + dado_2
 
 resultado_jugador = [ dado_1 , dado_2, total]
+=end
 
+dados_jugador = dados_aleatorio(2)
 # el jugador lanza su propio dado
 
-puts "=> Hola #{nombre} el primer dado tiene #{resultado_jugador[0]} el segundo #{resultado_jugador[1]} y el total es #{resultado_jugador[2]}!"
+puts "=> Hola #{nombre} el primer dado tiene #{dados_jugador[0]} el segundo #{dados_jugador[1]} y el total es #{dados_jugador.reduce(:+)}!"
 
 dado_11 = rand(6) + 1
 dado_22 = rand(6) + 1
