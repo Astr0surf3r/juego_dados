@@ -20,18 +20,31 @@ puts "=> Con cuantos dados quiere jugar 1 o 2"
 dados = gets.chomp
 
 if dados == '1'
+dado_jugador = dados_aleatorio(1)
 
-puts "tenemos que agregar el program por un dado"
+#puts "tenemos que agregar el program por un dado"
 #programa con un dado
+puts "=> Hola #{nombre} el primer dado tiene #{dado_jugador[0]}"
+
+dado_computadora = dados_aleatorio(1)
+
+puts "=> Hola el mi primer dado tiene #{dado_computadora[0]}"
+
+if dado_jugador[0] > dado_computadora[0]
+
+puts "=> Hola #{nombre} tu ganaste!"
+
+elsif dado_jugador[0] < dado_computadora[0]
+
+puts "=> HOla yo gane!"
+
+else
+
+puts "=> Empatamos!"
+
+end
 
 elsif dados == '2' 
-=begin
-dado_1 = rand(6) + 1
-dado_2 = rand(6) + 1
-total = dado_1 + dado_2
-
-resultado_jugador = [ dado_1 , dado_2, total]
-=end
 
 dados_jugador = dados_aleatorio(2)
 # el jugador lanza su propio dado
