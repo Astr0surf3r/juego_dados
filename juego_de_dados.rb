@@ -51,27 +51,32 @@ dados_jugador = dados_aleatorio(2)
 
 puts "=> Hola #{nombre} el primer dado tiene #{dados_jugador[0]} el segundo #{dados_jugador[1]} y el total es #{dados_jugador.reduce(:+)}!"
 
-dado_11 = rand(6) + 1
-dado_22 = rand(6) + 1
-total2 = dado_11 + dado_22
+#dado_11 = rand(6) + 1
+#dado_22 = rand(6) + 1
+#total2 = dado_11 + dado_22
 
-resultado_jugadoris = [ dado_11 , dado_22, total2]
+#resultado_jugadoris = [ dado_11 , dado_22, total2]
+
+
+dados_computadora = dados_aleatorio(2)
+# el jugador lanza su propio dado
 
 # la computadora lanza su propio dado
 
-puts "=> Hola Yo nel mi primer dado tengo #{resultado_jugadoris[0]} en el segundo tengo #{resultado_jugadoris[1]} y el total es #{resultado_jugadoris[2]}!"
+puts "=> Hola Yo nel mi primer dado tengo #{dados_computadora[0]} en el segundo tengo #{dados_computadora[1]} y el total es #{dados_computadora.reduce(:+)}!"
 
-if resultado_jugador[2] > resultado_jugadoris[2]
+a = dados_jugador.reduce(:+)
+b = dados_computadora.reduce(:+)
+
+if a > b
 
   puts "=> Hei #{nombre} ganaste! Tuviste suerte!"
 
-elsif resultado_jugador[2] < resultado_jugadoris[2]
+elsif a < b
 
    puts "=> Hei #{nombre} eres un loser! Yo gane!"
 
 else
-
-  resultado_jugador[2] == resultado_jugadoris[2]
 
   puts "=> Empate! Amigos como antes!"
 
